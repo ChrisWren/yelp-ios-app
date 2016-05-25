@@ -7,14 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		15D6B47E1CF39C3C0050C102 /* BusinessesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D6B47C1CF39C3C0050C102 /* BusinessesViewController.swift */; };
+		15D6B47F1CF39C3C0050C102 /* BusinessesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15D6B47D1CF39C3C0050C102 /* BusinessesViewController.xib */; };
+		15D6B4821CF39D030050C102 /* BusinessTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D6B4801CF39D030050C102 /* BusinessTableViewCell.swift */; };
+		15D6B4831CF39D030050C102 /* BusinessTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15D6B4811CF39D030050C102 /* BusinessTableViewCell.xib */; };
+		15D6B4861CF4169A0050C102 /* FiltersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D6B4841CF4169A0050C102 /* FiltersViewController.swift */; };
+		15D6B4871CF4169A0050C102 /* FiltersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15D6B4851CF4169A0050C102 /* FiltersViewController.xib */; };
+		15D6B48C1CF427320050C102 /* FilterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D6B48A1CF427320050C102 /* FilterTableViewCell.swift */; };
+		15D6B48D1CF427320050C102 /* FilterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15D6B48B1CF427320050C102 /* FilterTableViewCell.xib */; };
+		15D6B48F1CF42B490050C102 /* Categories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D6B48E1CF42B490050C102 /* Categories.swift */; };
+		15D6B4931CF4F9760050C102 /* Filters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D6B4921CF4F9760050C102 /* Filters.swift */; };
+		15D6B49A1CF510050050C102 /* LabelImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D6B4981CF510050050C102 /* LabelImageTableViewCell.swift */; };
+		15D6B49B1CF510050050C102 /* LabelImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15D6B4991CF510050050C102 /* LabelImageTableViewCell.xib */; };
+		15D6B49E1CF5119F0050C102 /* CenteredTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15D6B49C1CF5119F0050C102 /* CenteredTableViewCell.swift */; };
+		15D6B49F1CF5119F0050C102 /* CenteredTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15D6B49D1CF5119F0050C102 /* CenteredTableViewCell.xib */; };
 		222D8A5B19CCF9F900D2DB53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222D8A5A19CCF9F900D2DB53 /* AppDelegate.swift */; };
-		222D8A6019CCF9F900D2DB53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 222D8A5E19CCF9F900D2DB53 /* Main.storyboard */; };
 		222D8A6219CCF9F900D2DB53 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 222D8A6119CCF9F900D2DB53 /* Images.xcassets */; };
 		222D8A6519CCF9F900D2DB53 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 222D8A6319CCF9F900D2DB53 /* LaunchScreen.xib */; };
 		222D8A7119CCF9F900D2DB53 /* YelpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222D8A7019CCF9F900D2DB53 /* YelpTests.swift */; };
 		222D8A7D19CCFAE000D2DB53 /* YelpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222D8A7C19CCFAE000D2DB53 /* YelpClient.swift */; };
 		22AAAA991AEA0A9700A544AF /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AAAA981AEA0A9700A544AF /* Business.swift */; };
-		22AAAA9C1AEA1EC300A544AF /* BusinessesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AAAA9B1AEA1EC300A544AF /* BusinessesViewController.swift */; };
 		90B718C590BD546DEFEF0D61 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA3C5CF4FD317D72ABE2AAC4 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,10 +41,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		15D6B47C1CF39C3C0050C102 /* BusinessesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessesViewController.swift; sourceTree = "<group>"; };
+		15D6B47D1CF39C3C0050C102 /* BusinessesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BusinessesViewController.xib; sourceTree = "<group>"; };
+		15D6B4801CF39D030050C102 /* BusinessTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessTableViewCell.swift; sourceTree = "<group>"; };
+		15D6B4811CF39D030050C102 /* BusinessTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BusinessTableViewCell.xib; sourceTree = "<group>"; };
+		15D6B4841CF4169A0050C102 /* FiltersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiltersViewController.swift; sourceTree = "<group>"; };
+		15D6B4851CF4169A0050C102 /* FiltersViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FiltersViewController.xib; sourceTree = "<group>"; };
+		15D6B48A1CF427320050C102 /* FilterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterTableViewCell.swift; sourceTree = "<group>"; };
+		15D6B48B1CF427320050C102 /* FilterTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FilterTableViewCell.xib; sourceTree = "<group>"; };
+		15D6B48E1CF42B490050C102 /* Categories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Categories.swift; sourceTree = "<group>"; };
+		15D6B4921CF4F9760050C102 /* Filters.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Filters.swift; sourceTree = "<group>"; };
+		15D6B4981CF510050050C102 /* LabelImageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelImageTableViewCell.swift; sourceTree = "<group>"; };
+		15D6B4991CF510050050C102 /* LabelImageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LabelImageTableViewCell.xib; sourceTree = "<group>"; };
+		15D6B49C1CF5119F0050C102 /* CenteredTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CenteredTableViewCell.swift; sourceTree = "<group>"; };
+		15D6B49D1CF5119F0050C102 /* CenteredTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CenteredTableViewCell.xib; sourceTree = "<group>"; };
 		222D8A5519CCF9F900D2DB53 /* Yelp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yelp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		222D8A5919CCF9F900D2DB53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		222D8A5A19CCF9F900D2DB53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		222D8A5F19CCF9F900D2DB53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		222D8A6119CCF9F900D2DB53 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		222D8A6419CCF9F900D2DB53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		222D8A6A19CCF9F900D2DB53 /* YelpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YelpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,7 +65,6 @@
 		222D8A7019CCF9F900D2DB53 /* YelpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpTests.swift; sourceTree = "<group>"; };
 		222D8A7C19CCFAE000D2DB53 /* YelpClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YelpClient.swift; sourceTree = "<group>"; };
 		22AAAA981AEA0A9700A544AF /* Business.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
-		22AAAA9B1AEA1EC300A544AF /* BusinessesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessesViewController.swift; sourceTree = "<group>"; };
 		97D8B2E3FFD1AF4F4A707E47 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		AA3C5CF4FD317D72ABE2AAC4 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBD540129B10DFE60E8C24E2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -92,7 +116,6 @@
 				222D8A7A19CCFAAA00D2DB53 /* API */,
 				22AAAA9D1AEA1EC600A544AF /* View Controllers */,
 				222D8A5A19CCF9F900D2DB53 /* AppDelegate.swift */,
-				222D8A5E19CCF9F900D2DB53 /* Main.storyboard */,
 				222D8A6119CCF9F900D2DB53 /* Images.xcassets */,
 				222D8A6319CCF9F900D2DB53 /* LaunchScreen.xib */,
 				222D8A5819CCF9F900D2DB53 /* Supporting Files */,
@@ -137,6 +160,8 @@
 			isa = PBXGroup;
 			children = (
 				22AAAA981AEA0A9700A544AF /* Business.swift */,
+				15D6B48E1CF42B490050C102 /* Categories.swift */,
+				15D6B4921CF4F9760050C102 /* Filters.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -144,7 +169,18 @@
 		22AAAA9D1AEA1EC600A544AF /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				22AAAA9B1AEA1EC300A544AF /* BusinessesViewController.swift */,
+				15D6B47C1CF39C3C0050C102 /* BusinessesViewController.swift */,
+				15D6B47D1CF39C3C0050C102 /* BusinessesViewController.xib */,
+				15D6B4801CF39D030050C102 /* BusinessTableViewCell.swift */,
+				15D6B4811CF39D030050C102 /* BusinessTableViewCell.xib */,
+				15D6B48A1CF427320050C102 /* FilterTableViewCell.swift */,
+				15D6B48B1CF427320050C102 /* FilterTableViewCell.xib */,
+				15D6B4841CF4169A0050C102 /* FiltersViewController.swift */,
+				15D6B4851CF4169A0050C102 /* FiltersViewController.xib */,
+				15D6B4981CF510050050C102 /* LabelImageTableViewCell.swift */,
+				15D6B4991CF510050050C102 /* LabelImageTableViewCell.xib */,
+				15D6B49C1CF5119F0050C102 /* CenteredTableViewCell.swift */,
+				15D6B49D1CF5119F0050C102 /* CenteredTableViewCell.xib */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -251,9 +287,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				222D8A6019CCF9F900D2DB53 /* Main.storyboard in Resources */,
 				222D8A6519CCF9F900D2DB53 /* LaunchScreen.xib in Resources */,
+				15D6B48D1CF427320050C102 /* FilterTableViewCell.xib in Resources */,
+				15D6B49B1CF510050050C102 /* LabelImageTableViewCell.xib in Resources */,
+				15D6B4831CF39D030050C102 /* BusinessTableViewCell.xib in Resources */,
+				15D6B4871CF4169A0050C102 /* FiltersViewController.xib in Resources */,
+				15D6B47F1CF39C3C0050C102 /* BusinessesViewController.xib in Resources */,
 				222D8A6219CCF9F900D2DB53 /* Images.xcassets in Resources */,
+				15D6B49F1CF5119F0050C102 /* CenteredTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,10 +360,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22AAAA9C1AEA1EC300A544AF /* BusinessesViewController.swift in Sources */,
+				15D6B4821CF39D030050C102 /* BusinessTableViewCell.swift in Sources */,
+				15D6B48F1CF42B490050C102 /* Categories.swift in Sources */,
 				22AAAA991AEA0A9700A544AF /* Business.swift in Sources */,
 				222D8A7D19CCFAE000D2DB53 /* YelpClient.swift in Sources */,
 				222D8A5B19CCF9F900D2DB53 /* AppDelegate.swift in Sources */,
+				15D6B49A1CF510050050C102 /* LabelImageTableViewCell.swift in Sources */,
+				15D6B49E1CF5119F0050C102 /* CenteredTableViewCell.swift in Sources */,
+				15D6B4861CF4169A0050C102 /* FiltersViewController.swift in Sources */,
+				15D6B4931CF4F9760050C102 /* Filters.swift in Sources */,
+				15D6B48C1CF427320050C102 /* FilterTableViewCell.swift in Sources */,
+				15D6B47E1CF39C3C0050C102 /* BusinessesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,14 +393,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		222D8A5E19CCF9F900D2DB53 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				222D8A5F19CCF9F900D2DB53 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		222D8A6319CCF9F900D2DB53 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
