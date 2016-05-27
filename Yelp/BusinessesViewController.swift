@@ -37,7 +37,7 @@ class BusinessesViewController: UIViewController, UITableViewDelegate, UITableVi
     searchBar?.resignFirstResponder()
     let filtersVc = FiltersViewController()
     filtersVc.delegate = self
-    filtersVc.currentFilters = Filters()
+    filtersVc.filters = Filters()
     
     self.presentViewController(filtersVc, animated: true, completion: nil)
   }
@@ -50,7 +50,7 @@ class BusinessesViewController: UIViewController, UITableViewDelegate, UITableVi
     }
   }
   
-  func filtersViewController(filtersViewController: FiltersViewController, didUpdateFilters filters: [String : AnyObject]) {
+  func filtersViewController(filtersViewController: FiltersViewController, didUpdateFilters filters: [FilterRowIdentifier : AnyObject]) {
     fetchBusinesses("Restaurants")
   }
   

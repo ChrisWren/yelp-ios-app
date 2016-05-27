@@ -9,7 +9,7 @@
 import UIKit
 
 protocol CellExpansionTapDelegate: class {
-  func didTapCellExpansion(centeredTableViewCell :CenteredTableViewCell)
+  func didTapCellExpansion(tableViewCell :UITableViewCell)
 }
 
 class CenteredTableViewCell: UITableViewCell {

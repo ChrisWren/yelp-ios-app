@@ -9,16 +9,16 @@ import UIKit
 
 class Filters: NSObject {
   var deals :Bool = false
-  var distance :String = "Auto"
-  var distanceOptions :Dictionary<String, Double?> = [
-    "Auto": nil,
-    "0.3 Miles": 482.803,
-    "1 Mile": 1609.34,
-    "5 Miles": 8046.72,
-    "20 Miles": 329916
+  var distanceOptions :[[AnyObject]] = [
+    ["Auto", 0],
+    ["0.3 Miles", 482.803],
+    ["1 Mile", 1609.34],
+    ["5 Miles", 8046.72],
+    ["20 Miles", 329916]
   ]
-  var sortBy :String = "Best Match"
+  var distance = ["Auto", 0]
   var sortByOptions = ["Best Match", "Distance", "Highest Rated"]
+  var sortBy = "Best Match"
   var categories :Array<String> = []
   var categoriesOptions = Categories()
 }
