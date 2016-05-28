@@ -49,7 +49,6 @@ GIF created with [LiceCap](http://www.cockos.com/licecap/).
 ## Notes
 
 Describe any challenges encountered while building the app.
-- Struggled a bit with
 - Didn't have much time this week to work on the assignment and only got the bare minimum done
 - Next week I want to do more optionals and focus more on code quality
 
