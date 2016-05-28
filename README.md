@@ -36,7 +36,7 @@ The following **additional** features are implemented:
 Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
 
 1. How did people do table cell animations
-2. 
+2. How did people structure the filter data
 
 ## Video Walkthrough
 
@@ -52,6 +52,7 @@ Describe any challenges encountered while building the app.
 - Struggled a bit with
 - Didn't have much time this week to work on the assignment and only got the bare minimum done
 - Next week I want to do more optionals and focus more on code quality
+
 ## License
 
     Copyright [2016] [Chris Wren]
