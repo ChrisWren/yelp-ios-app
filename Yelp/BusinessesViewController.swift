@@ -13,6 +13,8 @@ class BusinessesViewController: UIViewController, UITableViewDelegate, UITableVi
 
   var businesses: [Business]?
   var searchBar: UISearchBar?
+  var query = "Restaurants"
+  var filters = Filters()
   @IBOutlet weak var businessTableView: UITableView!
   
   override func viewDidLoad() {
@@ -23,7 +25,7 @@ class BusinessesViewController: UIViewController, UITableViewDelegate, UITableVi
     businessTableView.estimatedRowHeight = 90
     businessTableView.registerNib(UINib(nibName: "BusinessTableViewCell", bundle: nil), forCellReuseIdentifier: "BusinessTableViewCell")
     
-    fetchBusinesses("Restaurants")
+    fetchBusinesses(query)
     navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Filter", style: .Plain, target: self, action: #selector(showFilterView))
     navigationController!.navigationBar.tintColor = UIColor.whiteColor()
     self.searchBar = UISearchBar()
@@ -37,30 +39,47 @@ class BusinessesViewController: UIViewController, UITableViewDelegate, UITableVi
     searchBar?.resignFirstResponder()
     let filtersVc = FiltersViewController()
     filtersVc.delegate = self
-    filtersVc.filters = Filters()
+    filtersVc.filters = filters
     
     self.presentViewController(filtersVc, animated: true, completion: nil)
   }
   
   func fetchBusinesses (query :String) {
-    Business.searchWithTerm(query, sort: .Distance, categories: [], deals: false) { (businesses: [Business]!, error: NSError!) -> Void in
+    var sortByToEnum = [
+      "Best Match": YelpSortMode.BestMatched,
+      "Distance": YelpSortMode.Distance,
+      "BHighest Rated": YelpSortMode.HighestRated
+    ]
+    Business.searchWithTerm(query, sort: sortByToEnum[filters.sortBy], categories: filters.categories, deals: filters.deals) { (businesses: [Business]!, error: NSError!) -> Void in
       self.businesses = businesses
       self.businessTableView.reloadData()
       self.searchBar?.resignFirstResponder()
     }
   }
   
-  func filtersViewController(filtersViewController: FiltersViewController, didUpdateFilters filters: [FilterRowIdentifier : AnyObject]) {
-    fetchBusinesses("Restaurants")
+  func filtersViewController(filtersViewController: FiltersViewController, didUpdateFilters filters: Filters) {
+    self.filters = filters
+    fetchBusinesses(query)
+  }
+  
+  func scrollViewDidScroll(scrollView: UIScrollView) {
+    searchBar?.resignFirstResponder()
   }
   
   func searchBarSearchButtonClicked(searchBar: UISearchBar) {
-    fetchBusinesses(searchBar.text!)
+    query = searchBar.text!
+    fetchBusinesses(query)
   }
   
   func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return businesses?.count ?? 0
   }
+  
+  func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    tableView.deselectRowAtIndexPath(indexPath, animated: false)
+  }
+  
+  
   
   func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCellWithIdentifier("BusinessTableViewCell", forIndexPath: indexPath) as! BusinessTableViewCell

@@ -21,4 +21,6 @@ class Filters: NSObject {
   var sortBy = "Best Match"
   var categories :Array<String> = []
   var categoriesOptions = Categories()
+  
+  
 }

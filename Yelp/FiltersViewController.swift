@@ -17,7 +17,7 @@ enum FilterRowIdentifier : String {
 }
 
 protocol FilterUpdateDelegate: class {
-  func filtersViewController(filtersViewController :FiltersViewController, didUpdateFilters filters :[FilterRowIdentifier:AnyObject])
+  func filtersViewController(filtersViewController :FiltersViewController, didUpdateFilters filters :Filters)
 }
 
 class FiltersViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, FilterTableViewCellDelegate, UINavigationBarDelegate, CellExpansionTapDelegate {
@@ -113,14 +113,10 @@ class FiltersViewController: UIViewController, UITableViewDelegate, UITableViewD
   func fitlersFromTableData() -> Filters {
     let ret = Filters()
     ret.categories = filterValues[.Category] as! Array<String>
-    ret.distance = filterValues[.Distance] as! [[AnyObject]]
+    ret.distance = (filterValues[.Distance] as? Array)!
     ret.deals = filterValues[.Deals] as! Bool
     ret.sortBy = filterValues[.SortBy] as! String
     return ret
-  }
-  
-  func tableView(tableView: UITableView, willDisplayCell cell: UITableViewCell, forRowAtIndexPath indexPath: NSIndexPath) {
-    
   }
   
   func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -132,7 +128,7 @@ class FiltersViewController: UIViewController, UITableViewDelegate, UITableViewD
     case .Distance:
       return hasExpandedDistances ? filters.distanceOptions.count : 1
     case .SortBy:
-      return hasExpandedSorting ? filters.sortByOptions.count : 1
+      return hasExpandedSorting ? YelpSortMode.count : 1
     }
   }
   
@@ -141,7 +137,8 @@ class FiltersViewController: UIViewController, UITableViewDelegate, UITableViewD
   }
   
   func applyFilters() {
-    delegate?.filtersViewController(self, didUpdateFilters: filterValues)
+    delegate?.filtersViewController(self, didUpdateFilters: fitlersFromTableData())
+    self.dismissViewControllerAnimated(true, completion: nil)
   }
 
   
