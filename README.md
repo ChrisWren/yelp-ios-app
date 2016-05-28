@@ -2,7 +2,7 @@
 
 **Name of your app** is a Yelp search app using the [Yelp API](http://www.yelp.com/developers/documentation/v2/search_api).
 
-Time spent: **7** hours spent in total
+Time spent: **10** hours spent in total
 
 ## User Stories
 
@@ -12,13 +12,13 @@ The following **required** functionality is completed:
    - [x] Table rows should be dynamic height according to the content height.
    - [x] Custom cells should have the proper Auto Layout constraints.
    - [x] Search bar should be in the navigation bar (doesn't have to expand to show location like the real Yelp app does).
-- [ ] Filter page. Unfortunately, not all the filters are supported in the Yelp API.
-   - [ ] The filters you should actually have are: category, sort (best match, distance, highest rated), distance, deals (on/off).
-   - [ ] The filters table should be organized into sections as in the mock.
-   - [ ] You can use the default UISwitch for on/off states.
-   - [ ] Clicking on the "Search" button should dismiss the filters page and trigger the search w/ the new filter settings.
-   - [ ] Distance filter should expand as in the real Yelp app
-   - [ ] Categories should show a subset of the full list with a "See All" row to expand. Category list is [here](http://www.yelp.com/developers/documentation/category_list).
+- [x] Filter page. Unfortunately, not all the filters are supported in the Yelp API.
+   - [x] The filters you should actually have are: category, sort (best match, distance, highest rated), distance, deals (on/off).
+   - [x] The filters table should be organized into sections as in the mock.
+   - [x] You can use the default UISwitch for on/off states.
+   - [x] Clicking on the "Search" button should dismiss the filters page and trigger the search w/ the new filter settings.
+   - [x] Distance filter should expand as in the real Yelp app
+   - [x] Categories should show a subset of the full list with a "See All" row to expand. Category list is [here](http://www.yelp.com/developers/documentation/category_list).
 
 The following **optional** features are implemented:
 
@@ -35,21 +35,23 @@ The following **additional** features are implemented:
 
 Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
 
-1.
-2.
+1. How did people do table cell animations
+2. 
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://i.imgur.com/JN4LYjF.gif?1' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
 Describe any challenges encountered while building the app.
-
+- Struggled a bit with
+- Didn't have much time this week to work on the assignment and only got the bare minimum done
+- Next week I want to do more optionals and focus more on code quality
 ## License
 
     Copyright [2016] [Chris Wren]
